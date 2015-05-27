@@ -1,14 +1,33 @@
 <!DOCTYPE html>
-<html>
+<html ng-app="myApp">
 <head lang="en">
     <meta charset="UTF-8">
     <title></title>
+    <script src="libraries/angular/angular.min.js"></script>
+    <script src="javascripts/app.js"></script>
 </head>
-<body>
-
+<body ng-controller="myCtrl">
+<div ng-repeat="d in data">
+    <h1>{{d}}</h1>
+</div>
+<br>
+<div ng-repeat="student in list">
+<label>Name :</label><label>{{student.name}}</label>
+ <br>
+ <label>Class :</label><label>{{student.class}}</label>
+</div>
+<br>
+<button ng-click="studentList()">Show Student</button>
+<br>
+<button ng-click="friendList()">Show Friend</button>
+<br>
+<h1>{{hellodata}}</h1>
+<button ng-click="makeRequest()">Make Request</button>
+<!--
 <form method="post" action="/">
     Name : <input type="text" name="name">
     <input type="submit">
 </form>
+-->
 </body>
 </html>
