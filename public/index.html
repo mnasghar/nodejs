@@ -7,6 +7,11 @@
     <script src="javascripts/app.js"></script>
 </head>
 <body ng-controller="myCtrl">
+
+<h1>{{dataAssg.name}}</h1>
+<h1>{{dataAssg.roll}}</h1>
+<button ng-click="assg()">Assignment</button>
+<br>
 <div ng-repeat="d in data">
     <h1>{{d}}</h1>
 </div>

@@ -29,4 +29,8 @@ router.get('/student',function(req,res){
               }
             ]);
 });
+
+router.post('/assg', function(req, res) {
+  res.json(req.body);
+})
 module.exports = router;
