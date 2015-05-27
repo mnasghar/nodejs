@@ -32,5 +32,8 @@ router.get('/student',function(req,res){
 
 router.post('/assg', function(req, res) {
   res.json(req.body);
-})
+});
+router.get('/fb:id', function(req, res) {
+  res.send(req.params.id);
+});
 module.exports = router;
